@@ -2146,7 +2146,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/dorothy.png",
         "module1": "",
-        "module2": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/dorothy_y.png",
+        "module2": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/module_dorothy_y.png",
         "module3": ""
     },
     {
@@ -2157,7 +2157,7 @@
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/ela.png",
         "module1": "",
         "module2": "",
-        "module3": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/ela_d.png"
+        "module3": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/module_ela_d.png"
     },
     {
         "name": "로빈",
@@ -2176,7 +2176,7 @@
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/frost.png",
         "module1": "",
-        "module2": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/frost_y.png",
+        "module2": "https://oricake.github.io/oper-img-repo/images/specialist/trapmaster/module_frost_y.png",
         "module3": ""
     },
     {
