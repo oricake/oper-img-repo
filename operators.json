@@ -905,7 +905,7 @@
         "mainClass": "디펜더",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/defender/protector/bison.png",
-        "module1": "https://oricake.github.io/oper-img-repo/images/defender/protector/module_baison_x.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/defender/protector/module_bison_x.png",
         "module2": "",
         "module3": ""
     },
@@ -1305,7 +1305,7 @@
         "mainClass": "스나이퍼",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/kroos_alt.png",
-        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/module_kroos_x.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/module_kroos_alt_x.png",
         "module2": "",
         "module3": ""
     },
@@ -2224,9 +2224,9 @@
         "subClass": "체인 캐스터",
         "mainClass": "캐스터",
         "rarity": 5,
-        "imageUrl": "https://oricake.github.io/oper-img-repo/images/caster/chain/astgenn.png",
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/caster/chain/astgenne.png",
         "module1": "",
-        "module2": "https://oricake.github.io/oper-img-repo/images/caster/chain/module_astgenn_y.png",
+        "module2": "https://oricake.github.io/oper-img-repo/images/caster/chain/module_astgenne_y.png",
         "module3": ""
     },
     {
