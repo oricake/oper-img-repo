@@ -1145,7 +1145,7 @@
         "mainClass": "스나이퍼",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/flinger/wishadel.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/flinger/module_wishadel_x.png",
         "module2": "",
         "module3": ""
     },
@@ -2287,7 +2287,7 @@
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/caster/core/logos.png",
         "module1": "",
         "module2": "",
-        "module3": ""
+        "module3": "https://oricake.github.io/oper-img-repo/images/caster/core/module_logos_d.png"
     },
     {
         "name": "아미야(캐스터)",
