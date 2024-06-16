@@ -2568,7 +2568,25 @@
         "module1": "",
         "module2": "https://oricake.github.io/oper-img-repo/images/caster/splash/module_greyy_y.png",
         "module3": ""
+    },
+    {
+        "name": "Doc",
+        "subClass": "교관",
+        "mainClass": "가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/instructor/doc.png",
+        "module1": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/instructor/module_doc_y.png",
+        "module3": ""
+    },
+    {
+        "name": "Tachanka",
+        "subClass": "소드마스터",
+        "mainClass": "가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/sword_master/tachanka.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/sword_master/module_tachanka_x.png",
+        "module2": "",
+        "module3": ""
     }
-]
-
-  
+]  
