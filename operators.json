@@ -475,7 +475,7 @@
         "mainClass": "가드",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/qiu_bai.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_qiu_bai_x.png",
         "module2": "",
         "module3": ""
     },
@@ -485,7 +485,7 @@
         "mainClass": "가드",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/silver_ash.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_silver_ash_x.png",
         "module2": "",
         "module3": ""
     },
@@ -495,7 +495,7 @@
         "mainClass": "가드",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/thorns.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_thorns_x.png",
         "module2": "",
         "module3": ""
     },
@@ -506,7 +506,7 @@
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/reto.png",
         "module1": "",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_reto_y.png",
         "module3": ""
     },
     {
@@ -515,7 +515,7 @@
         "mainClass": "가드",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/lappland.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_lappland_x.png",
         "module2": "",
         "module3": ""
     },
@@ -525,7 +525,7 @@
         "mainClass": "가드",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/aye.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_aye_x.png",
         "module2": "",
         "module3": ""
     }, 
@@ -535,8 +535,18 @@
         "mainClass": "가드",
         "rarity": 4,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/frost_leaf.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_frost_leaf_x.png",
         "module2": "",
+        "module3": ""
+    },
+    {
+        "name": "나소흑",
+        "subClass": "로드",
+        "mainClass": "가드",
+        "rarity": 4,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/luo.png",
+        "module1": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_luo_y.png",
         "module3": ""
     },
     {
@@ -546,7 +556,7 @@
         "rarity": 4,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/lord/arene.png",
         "module1": "",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/lord/module_arene_y.png",
         "module3": ""
     },
     {
