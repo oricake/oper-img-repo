@@ -846,7 +846,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/defender/juggernaut/penance.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/defender/juggernaut/module_penance_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/defender/juggernaut/module_penance_y.png",
         "module3": ""
     },
     {
@@ -985,7 +985,7 @@
         "mainClass": "디펜더",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/defender/sentinel/underflow.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/defender/sentinel/module_underflow_x.png",
         "module2": "",
         "module3": ""
     },
@@ -1735,7 +1735,7 @@
         "mainClass": "서포터",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/hexer/lucilla.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/hexer/module_lucilla_x.png",
         "module2": "",
         "module3": ""
     },
@@ -2026,7 +2026,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/specialist/hookmaster/gladiia.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/specialist/hookmaster/module_gladiia_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/specialist/hookmaster/module_gladiia_y.png",
         "module3": ""
     },
     {
@@ -2197,7 +2197,7 @@
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/caster/blast/ifrit.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/caster/blast/module_ifrit_x.png",
         "module2": "",
-        "module3": ""
+        "module3": "https://oricake.github.io/oper-img-repo/images/caster/blast/module_ifrit_d.png"
     },
     {
         "name": "아로마",
