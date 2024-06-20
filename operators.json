@@ -1231,21 +1231,21 @@
     },
     {
         "name": "레이",
-        "subClass": "헌터",
+        "subClass": "사냥꾼",
         "mainClass": "스나이퍼",
         "rarity": 6,
-        "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/hunter/rei.png",
-        "module1": "",
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/hunter/ray.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/hunter/module_ray_x.png",
         "module2": "",
         "module3": ""
     },
     {
         "name": "콜드샷",
-        "subClass": "헌터",
+        "subClass": "사냥꾼",
         "mainClass": "스나이퍼",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/hunter/cold_shot.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/hunter/module_cold_shot_x.png",
         "module2": "",
         "module3": ""
     },
