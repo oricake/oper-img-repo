@@ -131,3 +131,22 @@ async function searchOperator() {
     alert("오퍼레이터 이름을 입력하세요.");
   }
 }
+
+// 모듈이 있는 경우 버튼에 .has-module 클래스 추가
+function checkModules() {
+  fetchJson('https://raw.githubusercontent.com/oricake/oper-img-repo/main/operators.json').then(operators => {
+    operators.forEach(operator => {
+      if (operator.module1 || operator.module2 || operator.module3) {
+        const button = document.querySelector(`[data-operator="${operator.name}"]`);
+        if (button) {
+          button.classList.add('has-module');
+        }
+      }
+    });
+  });
+}
+
+// 페이지 로드 시 모듈 확인 함수 호출
+document.addEventListener('DOMContentLoaded', (event) => {
+  checkModules();
+});

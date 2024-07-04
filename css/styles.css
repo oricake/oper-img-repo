@@ -1,88 +1,107 @@
 body {
   font-family: Arial, sans-serif;
-  background-color: #f0f0f0;
+  background-color: #121212; /* 다크 모드 배경색 */
+  color: white; /* 기본 글자색 */
   margin: 0;
   padding: 20px;
 }
+
 h1 {
   text-align: center;
-  color: #333;
+  color: white; /* 제목 색상 */
 }
+
 #search-section {
   text-align: center;
   margin: 20px;
 }
+
 #search-section p, #search-section input, #search-section button {
   display: inline-block;
   vertical-align: middle;
   margin: 0 5px;
 }
+
 #class-selection, #subclass-selection {
   text-align: center;
   margin-bottom: 20px;
 }
+
 .fancy-button {
   display: inline-block;
   margin: 10px;
   padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
+  background-color: #00d1d4; /* 밝은 청록색 */
+  color: black; /* 버튼 텍스트 색상 */
   border: none;
   border-radius: 5px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
+
 .fancy-button:hover {
-  background-color: #0056b3;
+  background-color: white; /* 흰색으로 변경 */
+  color: black; /* 흰색 배경일 때 검은색 텍스트 */
 }
+
 .operator {
   display: inline-block;
   margin: 20px;
   text-align: center;
-  background-color: white;
+  background-color: #121212; /* 작은 윈도우 배경색 */
+  color: white; /* 글자색 */
   padding: 10px;
   border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2); /* 흰색 그림자 */
 }
+
 .operator img {
   max-width: 100%;
   height: auto;
   display: block;
   margin: 0 auto;
 }
+
 .details {
   margin-top: 10px;
 }
+
 .detail-button {
   display: block;
   margin: 5px 0;
   padding: 5px;
-  color: white;
+  color: black; /* 검은색 텍스트 */
   text-decoration: none;
   text-align: center;
   border-radius: 5px;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
+
 .detail-button.green {
-  background-color: #28a745;
+  background-color: #00d1d4; /* 밝은 청록색 */
 }
+
 .detail-button.green:hover {
-  background-color: #218838;
+  background-color: white; /* 흰색으로 변경 */
 }
+
 .detail-button.gray {
   background-color: #6c757d;
 }
+
 .detail-button.gray:hover {
   background-color: #5a6268;
 }
+
 .module-image {
   display: none;
   margin-top: 10px;
   max-width: 100%;
   height: auto;
 }
+
 .no-module {
   color: red;
   margin-top: 10px;
