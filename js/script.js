@@ -101,17 +101,21 @@ function toggleModule(moduleUrl, operatorDiv) {
   if (moduleUrl) {
     if (moduleImage.style.display === 'block' && moduleImage.src === moduleUrl) {
       moduleImage.style.display = 'none';
+      operatorDiv.classList.remove('module-active');
     } else {
       moduleImage.src = moduleUrl;
       moduleImage.style.display = 'block';
       noModuleText.style.display = 'none';
+      operatorDiv.classList.add('module-active');
     }
   } else {
     if (noModuleText.style.display === 'block') {
       noModuleText.style.display = 'none';
+      operatorDiv.classList.remove('module-active');
     } else {
       moduleImage.style.display = 'none';
       noModuleText.style.display = 'block';
+      operatorDiv.classList.remove('module-active');
     }
   }
 }
