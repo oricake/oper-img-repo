@@ -561,7 +561,7 @@
     },
     {
         "name": "좌락",
-        "subClass": "무사",
+        "subClass": "솔로블레이드",
         "mainClass": "가드",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/musha/zuo.png",
@@ -571,7 +571,7 @@
     },
     {
         "name": "헬라그",
-        "subClass": "무사",
+        "subClass": "솔로블레이드",
         "mainClass": "가드",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/musha/hellagur.png",
@@ -581,7 +581,7 @@
     },
     {
         "name": "아카후유",
-        "subClass": "무사",
+        "subClass": "솔로블레이드",
         "mainClass": "가드",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/musha/sword_crab.png",
@@ -591,7 +591,7 @@
     },
     {
         "name": "레우스S 느와르 코르네",
-        "subClass": "무사",
+        "subClass": "솔로블레이드",
         "mainClass": "가드",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/musha/noir_alt.png",
@@ -601,7 +601,7 @@
     },
     {
         "name": "우타게",
-        "subClass": "무사",
+        "subClass": "솔로블레이드",
         "mainClass": "가드",
         "rarity": 4,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/musha/utage.png",
