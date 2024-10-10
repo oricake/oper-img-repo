@@ -58,7 +58,7 @@ function displayOperators(operators) {
     // 버튼 텍스트 배열
     const buttonTexts = ['X형', 'Y형', 'Δ형', 'α형'];
     
-    ['module1', 'module2', 'module3'].forEach((module, index) => {
+    ['module1', 'module2', 'module3', 'module4'].forEach((module, index) => {
       const detailButton = document.createElement('span');
       detailButton.className = 'detail-button';
       detailButton.textContent = buttonTexts[index]; // 버튼 텍스트 설정
