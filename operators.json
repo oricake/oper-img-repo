@@ -2913,5 +2913,49 @@
         "module2": "",
         "module3": "",
         "module4": ""
+    },
+    {
+        "name": "첸 더 홀룽데이",
+        "subClass": "산탄사수",
+        "mainClass": "스나이퍼",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/chen_alt.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "이그제큐터",
+        "subClass": "산탄사수",
+        "mainClass": "스나이퍼",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/exec.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "아오스타",
+        "subClass": "산탄사수",
+        "mainClass": "스나이퍼",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/aosta.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "파인콘",
+        "subClass": "산탄사수",
+        "mainClass": "스나이퍼",
+        "rarity": 4,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/pinecone.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
     }
 ]
