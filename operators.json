@@ -2598,5 +2598,55 @@
         "module1": "https://oricake.github.io/oper-img-repo/images/guard/sword_master/module_tachanka_x.png",
         "module2": "",
         "module3": ""
+    },
+    {
+        "name": "에이야퍄들라 더 크비트 아스카",
+        "subClass": "방랑 메딕",
+        "mainClass": "메딕",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/medict/wandering_medic/eyja_alt.png",
+        "module1": "",
+        "module2": "",
+        "module3": ""
+    },
+    {
+        "name": "멀베리",
+        "subClass": "방랑 메딕",
+        "mainClass": "메딕",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/medict/wandering_medic/mberry.png",
+        "module1": "",
+        "module2": "",
+        "module3": ""
+    },
+    {
+        "name": "허니베리",
+        "subClass": "방랑 메딕",
+        "mainClass": "메딕",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/medict/wandering_medic/hberry.png",
+        "module1": "",
+        "module2": "",
+        "module3": ""
+    },
+    {
+        "name": "해럴드",
+        "subClass": "방랑 메딕",
+        "mainClass": "메딕",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/medict/wandering_medic/harold.png",
+        "module1": "",
+        "module2": "",
+        "module3": ""
+    },
+    {
+        "name": "체스트넛",
+        "subClass": "방랑 메딕",
+        "mainClass": "메딕",
+        "rarity": 4,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/medict/wandering_medic/chestnut.png",
+        "module1": "",
+        "module2": "",
+        "module3": ""
     }
 ]  
