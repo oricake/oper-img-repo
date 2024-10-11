@@ -2981,7 +2981,7 @@
         "module4": ""
     },
     {
-        "name": "마왕",
+        "name": "문명의 존속 (마왕)",
         "subClass": "음유시인",
         "mainClass": "서포터",
         "rarity": 6,
@@ -3026,8 +3026,8 @@
     },
     {
         "name": "윈드차임스",
-        "subClass": "음유시인",
-        "mainClass": "서포터",
+        "subClass": "대검사",
+        "mainClass": "가드",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/crusher/wind.png",
         "module1": "",
@@ -3037,8 +3037,8 @@
     },
     {
         "name": "쿼츠",
-        "subClass": "음유시인",
-        "mainClass": "서포터",
+        "subClass": "대검사",
+        "mainClass": "가드",
         "rarity": 4,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/crusher/quartz.png",
         "module1": "",
