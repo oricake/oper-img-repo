@@ -2975,7 +2975,7 @@
         "mainClass": "서포터",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/bard/skadi_alt.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/bard/module_skadi_alt_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2986,7 +2986,7 @@
         "mainClass": "서포터",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/bard/eterna.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/bard/module_eterna_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2997,7 +2997,7 @@
         "mainClass": "서포터",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/bard/heidi.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/bard/module_heidi_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -3008,7 +3008,7 @@
         "mainClass": "서포터",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/bard/sora.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/bard/module_sora_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -3019,7 +3019,7 @@
         "mainClass": "가드",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/crusher/ulpi.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/crusher/module_ulpi_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -3030,7 +3030,7 @@
         "mainClass": "가드",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/crusher/hoed.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/crusher/module_hoed_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
