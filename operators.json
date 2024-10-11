@@ -2920,7 +2920,7 @@
         "mainClass": "스나이퍼",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/chen_alt.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/module_chen_alt_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2931,7 +2931,7 @@
         "mainClass": "스나이퍼",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/exec.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/module_exec_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2942,7 +2942,7 @@
         "mainClass": "스나이퍼",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/aosta.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/module_aosta_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2953,7 +2953,7 @@
         "mainClass": "스나이퍼",
         "rarity": 4,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/pinecone.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/sniper/spreadshooter/module_pinecone_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2965,7 +2965,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/caster/splash/marc.png",
         "module1": "",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/caster/splash/module_marc_y.png",
         "module3": "",
         "module4": ""
     },
