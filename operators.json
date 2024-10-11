@@ -3003,6 +3003,17 @@
         "module4": ""
     },
     {
+        "name": "소라",
+        "subClass": "음유시인",
+        "mainClass": "서포터",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/bard/sora.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
         "name": "울피아누스",
         "subClass": "대검사",
         "mainClass": "가드",
