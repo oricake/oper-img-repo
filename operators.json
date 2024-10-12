@@ -731,7 +731,7 @@
         "mainClass": "가드",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/sword_master/irene.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/sword_master/module_irene_x.png",
         "module2": "https://oricake.github.io/oper-img-repo/images/guard/sword_master/module_irene_y.png",
         "module3": "",
         "module4": ""
@@ -1942,7 +1942,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/artificer/stainless.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/supporter/artificer/module_stainless_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/supporter/artificer/module_stainless_y.png",
         "module3": "",
         "module4": ""
     },
@@ -2153,7 +2153,7 @@
         "module1": "https://oricake.github.io/oper-img-repo/images/specialist/executor/module_phantom_x.png",
         "module2": "https://oricake.github.io/oper-img-repo/images/specialist/executor/module_phantom_y.png",
         "module3": "",
-        "module4": ""
+        "module4": "https://oricake.github.io/oper-img-repo/images/specialist/executor/module_phantom_a.png"
     },
     {
         "name": "레드",
@@ -3091,13 +3091,46 @@
         "module4": ""
     },
     {
+        "name": "이네스",
+        "subClass": "에이전트",
+        "mainClass": "뱅가드",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/vanguard/agent/ines.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "칸타빌레",
+        "subClass": "에이전트",
+        "mainClass": "뱅가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/vanguard/agent/canta.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "퍼즐",
+        "subClass": "에이전트",
+        "mainClass": "뱅가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/vanguard/agent/puzzle.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
         "name": "칠책",
         "subClass": "에이전트",
         "mainClass": "뱅가드",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/vanguard/agent/chil.png",
-        "module1": "",
-        "module2": "https://oricake.github.io/oper-img-repo/images/defender/guardian/module_senshi_y.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/vanguard/agent/module_chil_x.png",
+        "module2": "",
         "module3": "",
         "module4": ""
     }
