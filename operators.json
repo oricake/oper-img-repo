@@ -809,7 +809,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/defender/fortress/horn.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/defender/fortress/module_horn_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/defender/fortress/module_horn_y.png",
         "module3": "",
         "module4": ""
     },
@@ -1623,7 +1623,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/medic/multi_target/nightingale.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/medic/multi_target/module_nightingale_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/medic/multi_target/module_nightingale_y.png",
         "module3": "",
         "module4": ""
     },
@@ -3054,6 +3054,50 @@
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/crusher/quartz.png",
         "module1": "",
         "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "캐서린",
+        "subClass": "기능공",
+        "mainClass": "서포터",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/artificer/cath.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/artificer/module_cath_x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "라이오스",
+        "subClass": "드레드노트",
+        "mainClass": "가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/laios.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/module_laios_x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "센시",
+        "subClass": "가디언",
+        "mainClass": "디펜더",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/defender/guardian/seshi.png",
+        "module1": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/defender/guardian/module_senshi_y.png",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "칠책",
+        "subClass": "에이전트",
+        "mainClass": "뱅가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/vanguard/agent/chil.png",
+        "module1": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/defender/guardian/module_senshi_y.png",
         "module3": "",
         "module4": ""
     }
