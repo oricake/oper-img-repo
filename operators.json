@@ -2865,7 +2865,7 @@
         "mainClass": "메딕",
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/eyja_alt.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/module_eyja_alt_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2876,7 +2876,7 @@
         "mainClass": "메딕",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/mberry.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/module_mberry_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2887,7 +2887,7 @@
         "mainClass": "메딕",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/hberry.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/module_hberry_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2898,7 +2898,7 @@
         "mainClass": "메딕",
         "rarity": 5,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/harold.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/module_harold_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
@@ -2909,7 +2909,7 @@
         "mainClass": "메딕",
         "rarity": 4,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/chestnut.png",
-        "module1": "",
+        "module1": "https://oricake.github.io/oper-img-repo/images/medic/wandering_medic/module_chestnut_x.png",
         "module2": "",
         "module3": "",
         "module4": ""
