@@ -1,51 +1,102 @@
+const OPERATORS_URL = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/operators.json';
+const CLASSES_URL = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/classes.json';
+const MODULE_BUTTON_TEXTS = ['X형', 'Y형', 'Δ형', 'α형'];
+
 async function fetchJson(url) {
-  const response = await fetch(url);
-  return await response.json();
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Network response was not ok: ${response.status}`);
+    }
+    return await response.json();
+  } catch (error) {
+    console.error(`Fetch error: ${error}`);
+    return null; 
+  }
 }
 
-async function loadSubClasses(mainClass) {
-  const url = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/classes.json'; // classes.json 파일 URL
-  const classes = await fetchJson(url);
-  displaySubClasses(classes[mainClass] || []);
-}
+async function onMainClassChange() {
+  const mainClassSelect = document.getElementById('main-class-select');
+  const selectedMainClass = mainClassSelect.value;
+  
+  const subclassSelect = document.getElementById('subclass-select');
+  subclassSelect.innerHTML = '<option value="">서브클래스를 선택하세요</option>';
 
-function displaySubClasses(subClasses) {
-  const subclassSelection = document.getElementById('subclass-selection');
-  subclassSelection.innerHTML = ''; // 기존 버튼을 제거
+  if (!selectedMainClass) {
+    subclassSelect.style.display = 'none';
+    clearOperators();
+    return;
+  }
+
+  const classes = await fetchJson(CLASSES_URL);
+  if (!classes) {
+    displayError('클래스 정보를 불러오지 못했습니다.');
+    return;
+  }
+
+  const subClasses = classes[selectedMainClass] || [];
+  if (subClasses.length === 0) {
+    subclassSelect.style.display = 'none';
+    displayError('해당 메인 클래스에 서브클래스가 없습니다.');
+    return;
+  }
+
+  // 서브클래스 옵션 추가
   subClasses.forEach(subClass => {
-    const button = document.createElement('button');
-    button.className = 'fancy-button';
-    button.textContent = subClass;
-    button.onclick = () => loadOperators(subClass);
-    subclassSelection.appendChild(button);
+    const option = document.createElement('option');
+    option.value = subClass;
+    option.textContent = subClass;
+    subclassSelect.appendChild(option);
   });
+  
+  subclassSelect.style.display = 'inline-block';
+  clearOperators();
+}
+
+async function onSubClassChange() {
+  const subclassSelect = document.getElementById('subclass-select');
+  const selectedSubClass = subclassSelect.value;
+
+  if (!selectedSubClass) {
+    clearOperators();
+    return;
+  }
+
+  loadOperators(selectedSubClass);
 }
 
 async function loadOperators(subClass) {
-  const url = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/operators.json'; // operators.json 파일 URL
-  const operators = await fetchJson(url);
-  const filteredOperators = operators.filter(operator => operator.subClass === subClass);
+  const operators = await fetchJson(OPERATORS_URL);
+  if (!operators) {
+    console.warn('Failed to load operators data.');
+    displayError('오퍼레이터 정보를 불러오지 못했습니다.');
+    return;
+  }
 
-  // 희귀도 등급순으로 정렬 (높은 등급 순서)
+  const filteredOperators = operators.filter(op => op.subClass === subClass);
   filteredOperators.sort((a, b) => b.rarity - a.rarity);
 
   displayOperators(filteredOperators);
 }
 
 function displayOperators(operators) {
-  console.log(operators); // 디버깅을 위해 operators 로그 출력
   const operatorList = document.getElementById('operator-list');
-  operatorList.innerHTML = ''; // 기존 오퍼레이터 목록을 제거
+  operatorList.innerHTML = '';
+
+  if (operators.length === 0) {
+    const noResult = document.createElement('p');
+    noResult.textContent = '해당 조건에 맞는 오퍼레이터가 없습니다.';
+    operatorList.appendChild(noResult);
+    return;
+  }
+
   operators.forEach(operator => {
-    console.log("Displaying Operator: " + operator.name + ", Image URL: " + operator.imageUrl);
     const operatorDiv = document.createElement('div');
     operatorDiv.className = 'operator';
 
     const operatorImg = document.createElement('img');
     operatorImg.src = operator.imageUrl;
     operatorImg.alt = operator.name;
-    operatorImg.width = 100;
-    console.log("Image Source: " + operatorImg.src); // 이미지 URL 확인
     operatorDiv.appendChild(operatorImg);
 
     const operatorName = document.createElement('p');
@@ -55,19 +106,17 @@ function displayOperators(operators) {
     const detailsDiv = document.createElement('div');
     detailsDiv.className = 'details';
 
-    // 버튼 텍스트 배열
-    const buttonTexts = ['X형', 'Y형', 'Δ형', 'α형'];
-    
-    ['module1', 'module2', 'module3', 'module4'].forEach((module, index) => {
+    const modules = [operator.module1, operator.module2, operator.module3, operator.module4];
+    modules.forEach((moduleUrl, index) => {
       const detailButton = document.createElement('span');
       detailButton.className = 'detail-button';
-      detailButton.textContent = buttonTexts[index]; // 버튼 텍스트 설정
+      detailButton.textContent = MODULE_BUTTON_TEXTS[index];
 
-      if (operator[module]) {
+      if (moduleUrl) {
         detailButton.classList.add('green');
         detailButton.onclick = (event) => {
           event.preventDefault();
-          toggleModule(operator[module], operatorDiv);
+          toggleModule(moduleUrl, operatorDiv);
         };
       } else {
         detailButton.classList.add('gray');
@@ -81,13 +130,16 @@ function displayOperators(operators) {
     });
 
     operatorDiv.appendChild(detailsDiv);
+
     const moduleImage = document.createElement('img');
     moduleImage.className = 'module-image';
+    moduleImage.style.display = 'none';
     operatorDiv.appendChild(moduleImage);
 
     const noModuleText = document.createElement('p');
     noModuleText.className = 'no-module';
     noModuleText.textContent = '해당 모듈이 없습니다.';
+    noModuleText.style.display = 'none';
     operatorDiv.appendChild(noModuleText);
 
     operatorList.appendChild(operatorDiv);
@@ -98,59 +150,60 @@ function toggleModule(moduleUrl, operatorDiv) {
   const moduleImage = operatorDiv.querySelector('.module-image');
   const noModuleText = operatorDiv.querySelector('.no-module');
 
+  moduleImage.style.display = 'none';
+  noModuleText.style.display = 'none';
+
   if (moduleUrl) {
-    if (moduleImage.style.display === 'block' && moduleImage.src === moduleUrl) {
-      moduleImage.style.display = 'none';
+    if (operatorDiv.classList.contains('module-active') && moduleImage.src === moduleUrl) {
       operatorDiv.classList.remove('module-active');
-    } else {
-      moduleImage.src = moduleUrl;
-      moduleImage.style.display = 'block';
-      noModuleText.style.display = 'none';
-      operatorDiv.classList.add('module-active');
+      return;
     }
+    moduleImage.src = moduleUrl;
+    moduleImage.style.display = 'block';
+    operatorDiv.classList.add('module-active');
   } else {
-    if (noModuleText.style.display === 'block') {
-      noModuleText.style.display = 'none';
-      operatorDiv.classList.remove('module-active');
-    } else {
-      moduleImage.style.display = 'none';
-      noModuleText.style.display = 'block';
-      operatorDiv.classList.remove('module-active');
-    }
+    operatorDiv.classList.remove('module-active');
+    noModuleText.style.display = 'block';
   }
 }
 
 async function searchOperator() {
   const operatorName = document.getElementById('operator-search').value.trim();
-  if (operatorName) {
-    const url = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/operators.json'; // operators.json 파일 URL
-    const operators = await fetchJson(url);
-    const filteredOperators = operators.filter(operator => operator.name.toLowerCase().includes(operatorName.toLowerCase()));
-
-    // 희귀도 등급순으로 정렬 (높은 등급 순서)
-    filteredOperators.sort((a, b) => b.rarity - a.rarity);
-
-    displayOperators(filteredOperators);
-  } else {
+  if (!operatorName) {
     alert("오퍼레이터 이름을 입력하세요.");
+    return;
   }
+
+  const operators = await fetchJson(OPERATORS_URL);
+  if (!operators) {
+    console.warn('Failed to load operators data.');
+    displayError('오퍼레이터 정보를 불러오지 못했습니다.');
+    return;
+  }
+
+  const filteredOperators = operators.filter(op =>
+    op.name.toLowerCase().includes(operatorName.toLowerCase())
+  );
+
+  filteredOperators.sort((a, b) => b.rarity - a.rarity);
+
+  displayOperators(filteredOperators);
 }
 
-// 모듈이 있는 경우 버튼에 .has-module 클래스 추가
-function checkModules() {
-  fetchJson('https://raw.githubusercontent.com/oricake/oper-img-repo/main/operators.json').then(operators => {
-    operators.forEach(operator => {
-      if (operator.module1 || operator.module2 || operator.module3) {
-        const button = document.querySelector(`[data-operator="${operator.name}"]`);
-        if (button) {
-          button.classList.add('has-module');
-        }
-      }
-    });
-  });
+function displayError(message) {
+  const operatorList = document.getElementById('operator-list');
+  operatorList.innerHTML = '';
+  const errorMsg = document.createElement('p');
+  errorMsg.style.color = 'red';
+  errorMsg.textContent = message;
+  operatorList.appendChild(errorMsg);
 }
 
-// 페이지 로드 시 모듈 확인 함수 호출
-document.addEventListener('DOMContentLoaded', (event) => {
-  checkModules();
+function clearOperators() {
+  const operatorList = document.getElementById('operator-list');
+  operatorList.innerHTML = '';
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  // 필요하다면 초기 상태 로딩 등
 });
