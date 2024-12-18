@@ -33,62 +33,79 @@ async function loadOperators(subClass) {
 }
 
 function displayOperators(operators) {
-  console.log(operators); // 디버깅을 위해 operators 로그 출력
   const operatorList = document.getElementById('operator-list');
-  operatorList.innerHTML = ''; // 기존 오퍼레이터 목록을 제거
+  operatorList.innerHTML = '';
+  
   operators.forEach(operator => {
-    console.log("Displaying Operator: " + operator.name + ", Image URL: " + operator.imageUrl);
     const operatorDiv = document.createElement('div');
     operatorDiv.className = 'operator';
 
+    // 기본 이미지와 이름 추가
     const operatorImg = document.createElement('img');
     operatorImg.src = operator.imageUrl;
     operatorImg.alt = operator.name;
     operatorImg.width = 100;
-    console.log("Image Source: " + operatorImg.src); // 이미지 URL 확인
     operatorDiv.appendChild(operatorImg);
 
     const operatorName = document.createElement('p');
     operatorName.textContent = operator.name;
     operatorDiv.appendChild(operatorName);
 
-    const detailsDiv = document.createElement('div');
-    detailsDiv.className = 'details';
-
-    // 버튼 텍스트 배열
-    const buttonTexts = ['X형', 'Y형', 'Δ형', 'α형'];
+    // 모듈 드롭다운 생성
+    const moduleSelect = document.createElement('select');
+    moduleSelect.className = 'module-select';
     
-    ['module1', 'module2', 'module3', 'module4'].forEach((module, index) => {
-      const detailButton = document.createElement('span');
-      detailButton.className = 'detail-button';
-      detailButton.textContent = buttonTexts[index]; // 버튼 텍스트 설정
+    // 기본 옵션 추가
+    const defaultOption = document.createElement('option');
+    defaultOption.value = '';
+    defaultOption.textContent = '모듈 선택';
+    moduleSelect.appendChild(defaultOption);
 
-      if (operator[module]) {
-        detailButton.classList.add('green');
-        detailButton.onclick = (event) => {
-          event.preventDefault();
-          toggleModule(operator[module], operatorDiv);
-        };
-      } else {
-        detailButton.classList.add('gray');
-        detailButton.onclick = (event) => {
-          event.preventDefault();
-          toggleModule(null, operatorDiv);
-        };
+    // 사용 가능한 모듈만 옵션으로 추가
+    const moduleTypes = [
+      { key: 'module1', label: 'X형' },
+      { key: 'module2', label: 'Y형' },
+      { key: 'module3', label: 'Δ형' },
+      { key: 'module4', label: 'α형' }
+    ];
+
+    let hasModules = false;
+    moduleTypes.forEach(({key, label}) => {
+      if (operator[key]) {
+        hasModules = true;
+        const option = document.createElement('option');
+        option.value = operator[key];
+        option.textContent = label;
+        moduleSelect.appendChild(option);
       }
-
-      detailsDiv.appendChild(detailButton);
     });
 
-    operatorDiv.appendChild(detailsDiv);
-    const moduleImage = document.createElement('img');
-    moduleImage.className = 'module-image';
-    operatorDiv.appendChild(moduleImage);
+    // 모듈이 있는 경우에만 드롭다운 추가
+    if (hasModules) {
+      operatorDiv.appendChild(moduleSelect);
 
-    const noModuleText = document.createElement('p');
-    noModuleText.className = 'no-module';
-    noModuleText.textContent = '해당 모듈이 없습니다.';
-    operatorDiv.appendChild(noModuleText);
+      // 모듈 이미지를 표시할 컨테이너
+      const moduleImageContainer = document.createElement('div');
+      moduleImageContainer.className = 'module-image-container';
+      operatorDiv.appendChild(moduleImageContainer);
+
+      // 드롭다운 변경 이벤트 처리
+      moduleSelect.addEventListener('change', (e) => {
+        const selectedUrl = e.target.value;
+        moduleImageContainer.innerHTML = '';
+        
+        if (selectedUrl) {
+          const moduleImg = document.createElement('img');
+          moduleImg.src = selectedUrl;
+          moduleImg.className = 'module-image';
+          moduleImg.style.display = 'block';
+          moduleImageContainer.appendChild(moduleImg);
+          operatorDiv.classList.add('module-active');
+        } else {
+          operatorDiv.classList.remove('module-active');
+        }
+      });
+    }
 
     operatorList.appendChild(operatorDiv);
   });

@@ -124,3 +124,30 @@ h1 {
   background-color: #00d1d4; /* 청록색 마크 */
   clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
+
+.module-select {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  margin: 10px 0;
+  background-color: #2a2a2a;
+  color: white;
+  border: 1px solid #00d1d4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.module-select:focus {
+  outline: none;
+  border-color: white;
+}
+
+.module-image-container {
+  margin-top: 10px;
+}
+
+.module-image {
+  max-width: 100%;
+  height: auto;
+  display: none;
+}
