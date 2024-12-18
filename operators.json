@@ -3133,5 +3133,16 @@
         "module2": "",
         "module3": "",
         "module4": ""
+    },
+    {
+        "name": "비르투오사",
+        "subClass": "의식술사",
+        "mainClass": "서포터",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/ritualist/darling.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/ritualist/darling-module-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
     }
 ]
