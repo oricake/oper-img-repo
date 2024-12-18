@@ -3,30 +3,62 @@ async function fetchJson(url) {
   return await response.json();
 }
 
+// 메인 클래스 버튼 클릭 이벤트 함수 수정
 async function loadSubClasses(mainClass) {
-  const url = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/classes.json'; // classes.json 파일 URL
+  const url = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/classes.json';
   const classes = await fetchJson(url);
-  displaySubClasses(classes[mainClass] || []);
+  displaySubClasses(classes[mainClass] || [], mainClass);
+  
+  // 메인 클래스의 모든 오퍼레이터 표시
+  loadOperators(mainClass);
 }
 
-function displaySubClasses(subClasses) {
+// 서브클래스 표시 함수 수정
+function displaySubClasses(subClasses, mainClass) {
   const subclassSelection = document.getElementById('subclass-selection');
-  subclassSelection.innerHTML = ''; // 기존 버튼을 제거
+  subclassSelection.innerHTML = '';
+  
+  // '전체' 버튼 추가
+  const allButton = document.createElement('button');
+  allButton.className = 'fancy-button active';  // active 클래스 추가
+  allButton.textContent = '전체';
+  allButton.onclick = () => {
+    // 모든 버튼의 active 클래스 제거
+    subclassSelection.querySelectorAll('.fancy-button').forEach(btn => btn.classList.remove('active'));
+    allButton.classList.add('active');  // 현재 버튼에 active 클래스 추가
+    loadOperators(mainClass);
+  };
+  subclassSelection.appendChild(allButton);
+  
+  // 서브클래스 버튼들 추가
   subClasses.forEach(subClass => {
     const button = document.createElement('button');
     button.className = 'fancy-button';
     button.textContent = subClass;
-    button.onclick = () => loadOperators(subClass);
+    button.onclick = () => {
+      // 모든 버튼의 active 클래스 제거
+      subclassSelection.querySelectorAll('.fancy-button').forEach(btn => btn.classList.remove('active'));
+      button.classList.add('active');  // 현재 버튼에 active 클래스 추가
+      loadOperators(mainClass, subClass);
+    };
     subclassSelection.appendChild(button);
   });
 }
 
-async function loadOperators(subClass) {
-  const url = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/operators.json'; // operators.json 파일 URL
+// loadOperators 함수를 수정
+async function loadOperators(mainClass, subClass = null) {
+  const url = 'https://raw.githubusercontent.com/oricake/oper-img-repo/main/operators.json';
   const operators = await fetchJson(url);
-  const filteredOperators = operators.filter(operator => operator.subClass === subClass);
+  
+  // 메인 클래스로 먼저 필터링
+  let filteredOperators = operators.filter(operator => operator.mainClass === mainClass);
+  
+  // 서브클래스가 선택된 경우 추가 필터링
+  if (subClass) {
+    filteredOperators = filteredOperators.filter(operator => operator.subClass === subClass);
+  }
 
-  // 희귀도 등급순으로 정렬 (높은 등급 순서)
+  // 희귀도 등급순으로 정렬
   filteredOperators.sort((a, b) => b.rarity - a.rarity);
 
   displayOperators(filteredOperators);
