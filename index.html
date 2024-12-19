@@ -1,29 +1,51 @@
 <!DOCTYPE html>
-<html>
+<html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>모듈상세정보 by 명갤</title>
-  <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모듈상세정보 by 명갤</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <h1>모듈상세정보 by 명갤</h1>
-  <div id="search-section">
-    <p>오퍼레이터 이름으로 검색</p>
-    <input type="text" id="operator-search" placeholder="오퍼레이터 이름 입력">
-    <button class="fancy-button" onclick="searchOperator()">검색</button>
-  </div>
-  <div id="class-selection">
-    <button class="fancy-button" onclick="loadSubClasses('뱅가드')">뱅가드</button>
-    <button class="fancy-button" onclick="loadSubClasses('가드')">가드</button>
-    <button class="fancy-button" onclick="loadSubClasses('디펜더')">디펜더</button>
-    <button class="fancy-button" onclick="loadSubClasses('스나이퍼')">스나이퍼</button>
-    <button class="fancy-button" onclick="loadSubClasses('캐스터')">캐스터</button>
-    <button class="fancy-button" onclick="loadSubClasses('메딕')">메딕</button>
-    <button class="fancy-button" onclick="loadSubClasses('서포터')">서포터</button>
-    <button class="fancy-button" onclick="loadSubClasses('스페셜리스트')">스페셜리스트</button>
-  </div>
-  <div id="subclass-selection"></div>
-  <div id="operator-list"></div>
-  <script src="js/script.js"></script>
+    <div class="container">
+        <h1>모듈상세정보 by 명갤</h1>
+        
+        <!-- 검색 섹션 -->
+        <div id="search-section">
+            <div class="search-wrapper">
+                <input type="text" id="operator-search" placeholder="오퍼레이터 이름으로 검색">
+                <button class="search-button" onclick="searchOperator()">검색</button>
+            </div>
+        </div>
+
+        <!-- 메인 클래스 선택 -->
+        <div id="class-selection">
+            <button class="fancy-button" onclick="loadSubClasses('뱅가드')">뱅가드</button>
+            <button class="fancy-button" onclick="loadSubClasses('가드')">가드</button>
+            <button class="fancy-button" onclick="loadSubClasses('디펜더')">디펜더</button>
+            <button class="fancy-button" onclick="loadSubClasses('스나이퍼')">스나이퍼</button>
+            <button class="fancy-button" onclick="loadSubClasses('캐스터')">캐스터</button>
+            <button class="fancy-button" onclick="loadSubClasses('메딕')">메딕</button>
+            <button class="fancy-button" onclick="loadSubClasses('서포터')">서포터</button>
+            <button class="fancy-button" onclick="loadSubClasses('스페셜리스트')">스페셜리스트</button>
+        </div>
+
+        <!-- 서브클래스 선택 -->
+        <div id="subclass-selection"></div>
+
+        <!-- 오퍼레이터 그리드 -->
+        <div id="operator-list" class="operator-grid"></div>
+    </div>
+
+    <!-- 이미지 줌 오버레이 -->
+    <div id="zoom-overlay" class="zoom-overlay">
+        <div class="zoom-content">
+            <span class="zoom-close">&times;</span>
+            <img id="zoomed-image">
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

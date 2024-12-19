@@ -336,7 +336,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/lessing.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/module_lessing_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/module_lessing_y.png",
         "module3": "",
         "module4": ""
     },
@@ -1284,7 +1284,7 @@
         "module1": "https://oricake.github.io/oper-img-repo/images/sniper/flinger/module_rosmontis_x.png",
         "module2": "",
         "module3": "",
-        "module4": ""
+        "module4": "https://oricake.github.io/oper-img-repo/images/sniper/flinger/module_rosmontis_a.png"
     },
     {
         "name": "그레이 더 라이트닝 베어러",
@@ -1381,7 +1381,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/exuxiai.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/module_exuxiai_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/module_exuxiai_y.png",
         "module3": "",
         "module4": ""
     },
@@ -1812,7 +1812,7 @@
         "module1": "https://oricake.github.io/oper-img-repo/images/supporter/slower/module_angelina_x.png",
         "module2": "https://oricake.github.io/oper-img-repo/images/supporter/slower/module_angelina_y.png",
         "module3": "",
-        "module4": ""
+        "module4": "https://oricake.github.io/oper-img-repo/images/supporter/slower/module_angelina_a.png"
     },
     {
         "name": "스즈란",
@@ -3141,6 +3141,160 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/ritualist/darling.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/supporter/ritualist/darling-module-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "발라크빈",
+        "subClass": "의식술사",
+        "mainClass": "서포터",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/ritualist/vala.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/ritualist/vala-module-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "보빙",
+        "subClass": "의식술사",
+        "mainClass": "서포터",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/ritualist/bobb.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/ritualist/bobb-module-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "라플란드 더 데카덴차",
+        "subClass": "메카 캐스터",
+        "mainClass": "캐스터",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/caster/mecha/lapp-alt.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/caster/mecha/module-lapp-alt-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "불피스폴리아",
+        "subClass": "척후병",
+        "mainClass": "뱅가드",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/vanguard/pioneer/lapp-alt.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/vanguard/pioneer/module-lapp-alt-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "크라운슬레이어",
+        "subClass": "처형자",
+        "mainClass": "스페셜리스트",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/specialist/executor/crown.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/specialist/executor/module-crown-alt-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "피규리노",
+        "subClass": "상인",
+        "mainClass": "스페셜리스트",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/specialist/merchant/figu.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/specialist/merchant/module-figu-alt-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "로즈솔트",
+        "subClass": "멀티타겟메딕",
+        "mainClass": "메딕",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/medic/multi_target/rosesalt.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/medic/multi_target/module-rosesalt-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "비비아나",
+        "subClass": "아츠 파이터",
+        "mainClass": "가드",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/viviana.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "수르트",
+        "subClass": "아츠 파이터",
+        "mainClass": "가드",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/surtr.png",
+        "module1": "",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "비나 빅토리아",
+        "subClass": "아츠 파이터",
+        "mainClass": "가드",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/siege-alt.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/module-siege-alt-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "아스테시아",
+        "subClass": "아츠 파이터",
+        "mainClass": "가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/job-less.png",
+        "module1": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/job-less-y.png",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "아미야(가드)",
+        "subClass": "아츠 파이터",
+        "mainClass": "가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/donkey-guard.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/module-donkey-guard-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "시데로카",
+        "subClass": "아츠 파이터",
+        "mainClass": "가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/sideroca.png",
+        "module1": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/module-sideroca-y.png",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "무스",
+        "subClass": "아츠 파이터",
+        "mainClass": "가드",
+        "rarity": 4,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/mousse.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/arts_fighter/module-mousse-x.png",
         "module2": "",
         "module3": "",
         "module4": ""
