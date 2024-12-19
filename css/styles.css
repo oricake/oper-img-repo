@@ -282,10 +282,30 @@ h1 {
   position: absolute;
   right: 1rem;
   top: 1rem;
-  color: white;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #00d1d4;  /* 청록색으로 변경 */
   font-size: 2rem;
   cursor: pointer;
+  background: rgba(0, 0, 0, 0.5);  /* 반투명 배경 추가 */
+  border-radius: 50%;  /* 원형 모양 */
+  border: 2px solid #00d1d4;  /* 청록색 테두리 */
+  transition: all 0.3s ease;
   z-index: 1001;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);  /* 그림자 효과 */
+}
+
+.zoom-close:hover {
+  transform: scale(1.1);  /* 호버 시 살짝 커지는 효과 */
+  background: rgba(0, 209, 212, 0.2);  /* 호버 시 배경색 변경 */
+  box-shadow: 0 0 15px rgba(0, 209, 212, 0.5);  /* 글로우 효과 */
+}
+
+.zoom-close:active {
+  transform: scale(0.95);  /* 클릭 시 살짝 작아지는 효과 */
 }
 
 #zoomed-image {
