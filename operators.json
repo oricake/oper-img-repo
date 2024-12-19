@@ -336,7 +336,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/lessing.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/module_lessing_x.png",
-        "module2": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/module_lessing_y.png",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/dreadnought/module-lessing-y.png",
         "module3": "",
         "module4": ""
     },
@@ -1284,7 +1284,7 @@
         "module1": "https://oricake.github.io/oper-img-repo/images/sniper/flinger/module_rosmontis_x.png",
         "module2": "",
         "module3": "",
-        "module4": "https://oricake.github.io/oper-img-repo/images/sniper/flinger/module_rosmontis_a.png"
+        "module4": "https://oricake.github.io/oper-img-repo/images/sniper/flinger/module-rosmontis-a.png"
     },
     {
         "name": "그레이 더 라이트닝 베어러",
@@ -1381,7 +1381,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/exuxiai.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/module_exuxiai_x.png",
-        "module2": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/module_exuxiai_y.png",
+        "module2": "https://oricake.github.io/oper-img-repo/images/sniper/marksman/module-exuxiai-y.png",
         "module3": "",
         "module4": ""
     },
@@ -1812,7 +1812,7 @@
         "module1": "https://oricake.github.io/oper-img-repo/images/supporter/slower/module_angelina_x.png",
         "module2": "https://oricake.github.io/oper-img-repo/images/supporter/slower/module_angelina_y.png",
         "module3": "",
-        "module4": "https://oricake.github.io/oper-img-repo/images/supporter/slower/module_angelina_a.png"
+        "module4": "https://oricake.github.io/oper-img-repo/images/supporter/slower/module-angelina-a.png"
     },
     {
         "name": "스즈란",
