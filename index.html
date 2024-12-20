@@ -11,16 +11,17 @@
     <div class="container">
         <h1>모듈상세정보 by 명갤</h1>
         
-        <!-- 검색 섹션 -->
+        <!-- 검색 섹션: 초기부터 표시 -->
         <div id="search-section">
             <div class="search-wrapper">
                 <input type="text" id="operator-search" placeholder="오퍼레이터 이름으로 검색">
                 <button class="search-button" onclick="searchOperator()">검색</button>
             </div>
         </div>
-
-        <!-- 메인 클래스 선택 -->
+        
+        <!-- 클래스 및 공지사항 버튼: 초기 표시 -->
         <div id="class-selection">
+            <button class="fancy-button" onclick="showNotices()">공지사항</button>
             <button class="fancy-button" onclick="loadSubClasses('뱅가드')">뱅가드</button>
             <button class="fancy-button" onclick="loadSubClasses('가드')">가드</button>
             <button class="fancy-button" onclick="loadSubClasses('디펜더')">디펜더</button>
@@ -31,11 +32,25 @@
             <button class="fancy-button" onclick="loadSubClasses('스페셜리스트')">스페셜리스트</button>
         </div>
 
-        <!-- 서브클래스 선택 -->
-        <div id="subclass-selection"></div>
+        <!-- 공지사항: 초기 표시 -->
+        <div id="notice-section">
+            <div class="notice-card">
+                <h2 class="notice-title">[공지사항]</h2>
+                <p class="notice-text">
+                    최종 업데이트 일자: 2024년 12월 20일 <br>
+                    중섭기준 [은심호 열차 (재개방)] 까지 업데이트 <br>
+                    <br>
+                    이상이 있는 경우, 호출벨에서 알투콘을 찾을 것 <br>
+                    이제 나도 힘들어서 나무위키거 훔쳐오는데 그건 시꺼먼거고 내가 직접 제작한건 하얀색임 그러니 꺼먼색은 나한테 오지마
+                </p>
+            </div>
+        </div>
 
-        <!-- 오퍼레이터 그리드 -->
-        <div id="operator-list" class="operator-grid"></div>
+        <!-- 서브클래스 선택: 초기 숨김 -->
+        <div id="subclass-selection" style="display:none;"></div>
+
+        <!-- 오퍼레이터 그리드: 초기 숨김 -->
+        <div id="operator-list" class="operator-grid" style="display:none;"></div>
     </div>
 
     <!-- 이미지 줌 오버레이 -->
