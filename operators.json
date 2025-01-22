@@ -446,7 +446,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/fighter/chong_yue.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/guard/fighter/module_chong_yue_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/fighter/module-chong_yue-y.png",
         "module3": "",
         "module4": ""
     },
@@ -677,7 +677,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/musha/zuo.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/guard/musha/module_zuo_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/guard/musha/module-zuo-y.png",
         "module3": "",
         "module4": ""
     },
@@ -855,7 +855,7 @@
         "module1": "https://oricake.github.io/oper-img-repo/images/defender/duelist/module_eunectes_x.png",
         "module2": "https://oricake.github.io/oper-img-repo/images/defender/duelist/module_eunectes_y.png",
         "module3": "",
-        "module4": ""
+        "module4": "https://oricake.github.io/oper-img-repo/images/defender/duelist/module-eunectes-a.png"
     },
     {
         "name": "오로라",
@@ -2461,7 +2461,7 @@
         "module1": "https://oricake.github.io/oper-img-repo/images/caster/splash/module_dusk_x.png",
         "module2": "https://oricake.github.io/oper-img-repo/images/caster/splash/module_dusk_y.png",
         "module3": "",
-        "module4": ""
+        "module4": "https://oricake.github.io/oper-img-repo/images/caster/splash/module-dusk-a.png"
     },
     {
         "name": "모스티마",
@@ -2789,7 +2789,7 @@
         "rarity": 6,
         "imageUrl": "https://oricake.github.io/oper-img-repo/images/caster/phalanx/lin.png",
         "module1": "https://oricake.github.io/oper-img-repo/images/caster/phalanx/module_lin_x.png",
-        "module2": "",
+        "module2": "https://oricake.github.io/oper-img-repo/images/caster/phalanx/module-lin-y.png",
         "module3": "",
         "module4": ""
     },
@@ -3298,5 +3298,38 @@
         "module2": "",
         "module3": "",
         "module4": ""
-    }    
+    },
+    {
+        "name": "페페",
+        "subClass": "어스셰이커",
+        "mainClass": "가드",
+        "rarity": 6,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/earth_shaker/pepe.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/earth_shaker/module-pepe-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "오다",
+        "subClass": "어스셰이커",
+        "mainClass": "가드",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/guard/earth_shaker/oda.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/guard/earth_shaker/module-oda-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    },
+    {
+        "name": "싱주",
+        "subClass": "비호자",
+        "mainClass": "서포터",
+        "rarity": 5,
+        "imageUrl": "https://oricake.github.io/oper-img-repo/images/supporter/abjurer/xing.png",
+        "module1": "https://oricake.github.io/oper-img-repo/images/supporter/abjurer/module-xing-x.png",
+        "module2": "",
+        "module3": "",
+        "module4": ""
+    }
 ]
